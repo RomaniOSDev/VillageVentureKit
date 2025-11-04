@@ -110,7 +110,7 @@ class LoadingSplash: UIViewController {
     }
     
     func generateTrackingLink() -> String {
-        let base = "?"
+        let base = "https://villageventures.site/Gq6vN4RH?"
         if let savedURL = UserDefaults.standard.string(forKey: "finalAppsflyerURL") {
             let full = base + savedURL
             print("Generated tracking link: \(full)")
