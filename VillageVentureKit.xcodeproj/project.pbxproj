@@ -15,10 +15,8 @@
 		7464FA102EB8FC470067688C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7464FA062EB8FC470067688C /* Main.storyboard */; };
 		7464FA172EB8FC8B0067688C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464FA152EB8FC8B0067688C /* Extensions.swift */; };
 		7464FA182EB8FC8B0067688C /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464FA112EB8FC8B0067688C /* CheckLink.swift */; };
-		7464FA192EB8FC8B0067688C /* OneSignalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464FA122EB8FC8B0067688C /* OneSignalService.swift */; };
 		7464FA1A2EB8FC8B0067688C /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464FA142EB8FC8B0067688C /* LoaderViewController.swift */; };
 		7464FA1B2EB8FC8B0067688C /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464FA132EB8FC8B0067688C /* InternetViewController.swift */; };
-		7464FA1E2EB8FCC80067688C /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7464FA1D2EB8FCC80067688C /* OneSignalFramework */; };
 		7464FA212EB8FCD90067688C /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 7464FA202EB8FCD90067688C /* AppsFlyerLib */; };
 		7464FA2E2EB8FCFE0067688C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464FA222EB8FCFE0067688C /* BaseViewModel.swift */; };
 		7464FA2F2EB8FCFE0067688C /* DataGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464FA262EB8FCFE0067688C /* DataGame.swift */; };
@@ -51,7 +49,6 @@
 		7464FA072EB8FC470067688C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7464FA082EB8FC470067688C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7464FA112EB8FC8B0067688C /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
-		7464FA122EB8FC8B0067688C /* OneSignalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSignalService.swift; sourceTree = "<group>"; };
 		7464FA132EB8FC8B0067688C /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
 		7464FA142EB8FC8B0067688C /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		7464FA152EB8FC8B0067688C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -79,7 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7464FA512EB8FE9C0067688C /* SnapKit in Frameworks */,
-				7464FA1E2EB8FCC80067688C /* OneSignalFramework in Frameworks */,
 				7464FA212EB8FCD90067688C /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				7464FA112EB8FC8B0067688C /* CheckLink.swift */,
-				7464FA122EB8FC8B0067688C /* OneSignalService.swift */,
 				7464FA132EB8FC8B0067688C /* InternetViewController.swift */,
 				7464FA142EB8FC8B0067688C /* LoaderViewController.swift */,
 				7464FA152EB8FC8B0067688C /* Extensions.swift */,
@@ -315,7 +310,6 @@
 			);
 			mainGroup = 7464F9DF2EB8FC310067688C;
 			packageReferences = (
-				7464FA1C2EB8FCC80067688C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
 				7464FA1F2EB8FCD90067688C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
 				7464FA4F2EB8FE9C0067688C /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
@@ -384,7 +378,6 @@
 				7464FA4C2EB8FD070067688C /* ResultController.swift in Sources */,
 				7464FA4D2EB8FD070067688C /* SettingsController.swift in Sources */,
 				7464FA182EB8FC8B0067688C /* CheckLink.swift in Sources */,
-				7464FA192EB8FC8B0067688C /* OneSignalService.swift in Sources */,
 				7464FA1A2EB8FC8B0067688C /* LoaderViewController.swift in Sources */,
 				7464FA2E2EB8FCFE0067688C /* BaseViewModel.swift in Sources */,
 				7464FA2F2EB8FCFE0067688C /* DataGame.swift in Sources */,
@@ -440,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.village.ventures.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -478,7 +471,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.village.ventures.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -638,14 +631,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7464FA1C2EB8FCC80067688C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.15;
-			};
-		};
 		7464FA1F2EB8FCD90067688C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
@@ -665,11 +650,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7464FA1D2EB8FCC80067688C /* OneSignalFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7464FA1C2EB8FCC80067688C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
-			productName = OneSignalFramework;
-		};
 		7464FA202EB8FCD90067688C /* AppsFlyerLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7464FA1F2EB8FCD90067688C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
